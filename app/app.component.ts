@@ -9,7 +9,7 @@ import { Observable } from 'rxjs/Rx';
     `
 })
 export class AppComponent {
-       
+        
     constructor(){
         var keyups=Observable.fromEvent($("#search"), "keyup")
             .map(e => e.target.value)
